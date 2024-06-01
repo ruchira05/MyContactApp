@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="208dp"
+        android:layout_height="29dp"
+        android:textColor="@color/black"
+        android:text="Add New Contact"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Name"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editName"
+        android:layout_marginTop="32dp"
+        android:hint="Phone Number"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPhoneNumber"
+        android:layout_marginTop="32dp"
+        android:hint="Address"
+        app:layout_constraintTop_toBottomOf="@+id/editPhoneNumber"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editAddress"
+        android:layout_marginTop="32dp"
+        android:hint="Date of Birth"
+        app:layout_constraintTop_toBottomOf="@+id/editAddress"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editDob"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDob"
+        app:layout_constraintVertical_bias="0.113" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
