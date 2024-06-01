@@ -31,11 +31,6 @@ The Contact App is an Android application designed to manage personal contact in
 
 The app includes a predefined list of sample contacts with American names for demonstration purposes.
 
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
